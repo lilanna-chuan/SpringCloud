@@ -48,6 +48,12 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.61</version>
+        </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -78,6 +84,9 @@
         <module>eureka-client-provider</module>
         <module>eureka-client-consumer</module>
         <module>zlflovemm</module>
+        <module>ribbon-consumer</module>
+        <module>ribbon-provider-9004</module>
+        <module>ribbon-provider-9005</module>
     </modules>
 
 </project>
