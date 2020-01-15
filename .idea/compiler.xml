@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-client-consumer" />
+        <module name="eureka-client-provider" />
+        <module name="eureka-server-8000" />
+        <module name="eureka-server-8001" />
+        <module name="eureka-server-8002" />
+        <module name="ribbon-consumer" />
+        <module name="ribbon-provider-9004" />
+        <module name="ribbon-provider-9005" />
+        <module name="zlflovemm" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+      <module name="demo2" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="eureka-client-consumer" target="1.8" />
+      <module name="eureka-client-provider" target="1.8" />
+      <module name="eureka-server-8000" target="1.8" />
+      <module name="eureka-server-8001" target="1.8" />
+      <module name="eureka-server-8002" target="1.8" />
+      <module name="ribbon-consumer" target="1.8" />
+      <module name="ribbon-provider-9004" target="1.8" />
+      <module name="ribbon-provider-9005" target="1.8" />
+      <module name="SpringCloud" target="1.8" />
+      <module name="zlflovemm" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
