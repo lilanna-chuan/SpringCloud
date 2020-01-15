@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="demo" />
         <module name="eureka-client-consumer" />
         <module name="eureka-client-provider" />
         <module name="eureka-server-8000" />
         <module name="eureka-server-8001" />
         <module name="eureka-server-8002" />
+        <module name="hystrix-consumer" />
         <module name="ribbon-consumer" />
         <module name="ribbon-provider-9004" />
         <module name="ribbon-provider-9005" />
@@ -26,6 +28,7 @@
       <module name="eureka-server-8000" target="1.8" />
       <module name="eureka-server-8001" target="1.8" />
       <module name="eureka-server-8002" target="1.8" />
+      <module name="hystrix-consumer" target="1.8" />
       <module name="ribbon-consumer" target="1.8" />
       <module name="ribbon-provider-9004" target="1.8" />
       <module name="ribbon-provider-9005" target="1.8" />

@@ -87,6 +87,7 @@
         <module>ribbon-consumer</module>
         <module>ribbon-provider-9004</module>
         <module>ribbon-provider-9005</module>
+        <module>hystrix-consumer</module>
     </modules>
 
 </project>

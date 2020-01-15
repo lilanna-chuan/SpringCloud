@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/eureka-client-provider/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-client-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/ribbon-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

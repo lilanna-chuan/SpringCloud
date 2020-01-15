@@ -3,11 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringCloud.iml" filepath="$PROJECT_DIR$/.idea/SpringCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-client-consumer/eureka-client-consumer.iml" filepath="$PROJECT_DIR$/eureka-client-consumer/eureka-client-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-client-provider/eureka-client-provider.iml" filepath="$PROJECT_DIR$/eureka-client-provider/eureka-client-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server-8000/eureka-server-8000.iml" filepath="$PROJECT_DIR$/eureka-server-8000/eureka-server-8000.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server-8001/eureka-server-8001.iml" filepath="$PROJECT_DIR$/eureka-server-8001/eureka-server-8001.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server-8002/eureka-server-8002.iml" filepath="$PROJECT_DIR$/eureka-server-8002/eureka-server-8002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hystrix-consumer/hystrix-consumer.iml" filepath="$PROJECT_DIR$/hystrix-consumer/hystrix-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon-consumer/ribbon-consumer.iml" filepath="$PROJECT_DIR$/ribbon-consumer/ribbon-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon-provider-9004/ribbon-provider-9004.iml" filepath="$PROJECT_DIR$/ribbon-provider-9004/ribbon-provider-9004.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon-provider-9005/ribbon-provider-9005.iml" filepath="$PROJECT_DIR$/ribbon-provider-9005/ribbon-provider-9005.iml" />
