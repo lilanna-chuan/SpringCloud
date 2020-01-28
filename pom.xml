@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.2.RELEASE</version>
+        <version>2.2.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -88,6 +88,8 @@
         <module>ribbon-provider-9004</module>
         <module>ribbon-provider-9005</module>
         <module>hystrix-consumer</module>
+        <module>zuul</module>
+        <module>config</module>
     </modules>
 
 </project>

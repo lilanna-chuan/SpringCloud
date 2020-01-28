@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config" />
         <module name="demo" />
         <module name="eureka-client-consumer" />
         <module name="eureka-client-provider" />
@@ -17,12 +18,12 @@
         <module name="ribbon-provider-9004" />
         <module name="ribbon-provider-9005" />
         <module name="zlflovemm" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="config" target="1.8" />
       <module name="demo" target="1.8" />
-      <module name="demo2" target="1.8" />
-      <module name="eureka" target="1.8" />
       <module name="eureka-client-consumer" target="1.8" />
       <module name="eureka-client-provider" target="1.8" />
       <module name="eureka-server-8000" target="1.8" />
@@ -34,6 +35,7 @@
       <module name="ribbon-provider-9005" target="1.8" />
       <module name="SpringCloud" target="1.8" />
       <module name="zlflovemm" target="1.8" />
+      <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
