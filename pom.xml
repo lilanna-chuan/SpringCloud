@@ -90,6 +90,9 @@
         <module>hystrix-consumer</module>
         <module>zuul</module>
         <module>config</module>
+        <module>kafka-producer</module>
+        <module>kafka-consumer</module>
+        <module>views</module>
     </modules>
 
 </project>
