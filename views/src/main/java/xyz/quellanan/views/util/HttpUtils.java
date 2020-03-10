@@ -40,7 +40,7 @@ public class HttpUtils {
         StringBuilder stringBuilder = new StringBuilder();
         if (code == 200) {
             InputStream inputStream = connection.getInputStream();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream,"UTF-8"));
             String line;
             while ((line = reader.readLine()) != null) {
                 stringBuilder.append(line);
@@ -67,6 +67,7 @@ public class HttpUtils {
         }
         connection.setUseCaches(false);
         connection.setReadTimeout(8000);
+
         connection.setConnectTimeout(8000);
         connection.setRequestProperty("Connection","keep-alive");
         connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36");

@@ -90,8 +90,7 @@ public class VistThread extends Thread{
         Elements titleArticle=document.getElementsByClass("title-article");
         Elements articleType=document.getElementsByClass("article-type");
         Elements readCount=document.getElementsByClass("read-count");
-        int count=Integer.parseInt(readCount.text().substring(4));
-        BlogBean blog=new BlogBean(titleArticle.text(),articleType.text(),count);
+        BlogBean blog=new BlogBean(titleArticle.text(),articleType.text(),readCount.text());
         return blog;
     }
 }

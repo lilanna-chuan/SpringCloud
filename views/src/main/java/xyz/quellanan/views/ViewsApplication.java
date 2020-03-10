@@ -12,7 +12,6 @@ public class ViewsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ViewsApplication.class, args);
-		FileUtils.getUrlFile();
 	}
 
 }

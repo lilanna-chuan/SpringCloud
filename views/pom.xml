@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>xyz.quellanan</groupId>
-	<artifactId>views</artifactId>
+	<artifactId>mtex-views</artifactId>
 	<version>1.0.0</version>
 	<name>views</name>
 	<description>add views project for Spring Boot</description>
@@ -53,14 +53,6 @@
 			<artifactId>jsoup</artifactId>
 			<version>1.11.3</version>
 		</dependency>
-
-        <dependency>
-            <groupId>cn.mastercom</groupId>
-            <artifactId>framework-core</artifactId>
-            <version>2.0.2</version>
-        </dependency>
-
-
 	</dependencies>
 
 	<build>
@@ -111,6 +103,7 @@
 						<exclude>config/**</exclude>
 						<exclude>/**/*.xml</exclude>
 						<exclude>/**/*.properties</exclude>
+						<exclude>/**/*.txt</exclude>
 					</excludes>
 				</configuration>
 			</plugin>

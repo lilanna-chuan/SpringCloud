@@ -1,6 +1,6 @@
 package xyz.quellanan.views.util;
 
-import cn.mastercom.utils.PathUtil;
+import org.springframework.util.ClassUtils;
 
 /**
  * @ClassName ConstantPool
@@ -21,7 +21,7 @@ public class ConstantPool {
     public static final String VISTBASEURL ="vistBaseUrl";
     public static final String AUTHORID ="authorId";
 
-    public static final String BASEPATH = PathUtil.getRootPath();
+    public static final String BASEPATH = ClassUtils.getDefaultClassLoader().getResource("").getPath();
     public static final String FILENAME = "urls.txt";
 
 

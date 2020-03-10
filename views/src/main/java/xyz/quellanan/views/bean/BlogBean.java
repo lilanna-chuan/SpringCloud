@@ -16,9 +16,9 @@ public class BlogBean {
     String titleArticle;
     String articleType;
     String url;
-    int readCount;
+    String readCount;
 
-    public BlogBean(String titleArticle,String articleType,int readCount){
+    public BlogBean(String titleArticle,String articleType,String readCount){
         this.titleArticle=titleArticle;
         this.articleType=articleType;
         this.readCount=readCount;

@@ -58,6 +58,7 @@ public class FileUtils {
     }
 
     public static void  getUrlFile(){
+        log.info("路径："+ConstantPool.BASEPATH);
         File file = new File(ConstantPool.BASEPATH+ConstantPool.FILENAME);
         if(!file.exists()){
             return;
