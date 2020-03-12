@@ -22,7 +22,7 @@ public class IpPool {
      * @param bean
      */
     public static synchronized void add(IpBean bean) {
-        if(ipBeanList.size()>1000){
+        if(ipBeanList.size()>=1000){
             return;
         }
         ipBeanList.add(bean);

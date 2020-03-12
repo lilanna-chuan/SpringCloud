@@ -8,6 +8,7 @@ import xyz.quellanan.views.bean.BlogBean;
 import xyz.quellanan.views.bean.IpBean;
 import xyz.quellanan.views.pool.IpPool;
 import xyz.quellanan.views.util.HttpUtils;
+import xyz.quellanan.views.util.HttpclientUtils;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -33,7 +34,7 @@ public class VistThread extends Thread{
 
     @Override
     public void run() {
-        vistUrlByProxy(new ArrayList<>(),url);
+        vistUrlByProxy(proxyList,url);
     }
 
     /**
@@ -50,6 +51,8 @@ public class VistThread extends Thread{
         while(it.hasNext()){
             IpBean ipBean = it.next();
             if(!vistUrlByProxy(ipBean,url)){
+                ipBean=null;
+                vistUrlByProxy(ipBean,url);
                 it.remove();
             }
         }
@@ -85,7 +88,7 @@ public class VistThread extends Thread{
      * @throws Exception
      */
     public BlogBean getBlogInfo(String url, IpBean ipBean)  throws Exception {
-        String html=HttpUtils.getResponseContent(url,ipBean);
+        String html=HttpclientUtils.getResponseContent(url,ipBean);
         Document document = Jsoup.parse(html);
         Elements titleArticle=document.getElementsByClass("title-article");
         Elements articleType=document.getElementsByClass("article-type");

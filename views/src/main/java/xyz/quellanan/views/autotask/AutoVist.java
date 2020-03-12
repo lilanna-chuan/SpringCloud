@@ -32,8 +32,7 @@ public class AutoVist {
             return;
         }
         for(String url:UrlPool.urlPool){
-            Thread thread=new VistThread(IpPool.ipBeanList,url);
-            thread.run();
+            new VistThread(IpPool.ipBeanList,url).start();
         }
     }
 }

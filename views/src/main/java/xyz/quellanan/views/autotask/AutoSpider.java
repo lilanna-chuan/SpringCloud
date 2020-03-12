@@ -35,9 +35,14 @@ public class AutoSpider {
     @Autowired
     Spider spider;
 
-    @Scheduled(cron = "0 0 6-23 * * ?")
+    @Scheduled(cron = "0 */10 6-23 * * ?")
     public void getIp() {
-        List<IpBean> list=spider.crawl(proxyUrl,pages);
+        List<IpBean> list= null;
+        try {
+            list = spider.crawl(proxyUrl,pages);
+        } catch (Exception e) {
+            log.error("{}",e);
+        }
         for(IpBean ipBean:list){
             IpPool.add(ipBean);
         }

@@ -1,6 +1,13 @@
 package xyz.quellanan.views.util;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.http.Header;
+import org.apache.http.HttpEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
 import xyz.quellanan.views.bean.IpBean;
 
 import javax.net.ssl.*;
@@ -33,8 +40,7 @@ public class HttpUtils {
      * @throws Exception
      */
     public static String getResponseContent(String url, IpBean ipBean) throws Exception {
-        HttpURLConnection connection=getHttpURLConnection(url,ipBean);
-        Thread.sleep(100);
+        HttpsURLConnection connection=getHttpsURLConnection(url,ipBean);
         connection.connect();
         int code = connection.getResponseCode();
         StringBuilder stringBuilder = new StringBuilder();
@@ -52,6 +58,8 @@ public class HttpUtils {
     }
 
 
+
+
     /**
      * 如果有代理，这是代理的请求连接conn。HttpURLConnection
      * @param url
@@ -65,10 +73,11 @@ public class HttpUtils {
             Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress(ipBean.getIp(), ipBean.getPort()));
             connection = (HttpURLConnection) new URL(url).openConnection(proxy);
         }
+        connection.setRequestMethod("GET");
         connection.setUseCaches(false);
         connection.setReadTimeout(8000);
-
         connection.setConnectTimeout(8000);
+        connection.setInstanceFollowRedirects(false);
         connection.setRequestProperty("Connection","keep-alive");
         connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36");
         return connection;
@@ -78,7 +87,7 @@ public class HttpUtils {
 
 
     /**
-     * 如果有代理，这是代理的请求连接conn
+     * 如果有代理，这是代理的请求连接conn HTTPS
      * @param url 请求的地址
      * @param ipBean 代理的bean
      * @return  请求的coon
@@ -115,29 +124,6 @@ public class HttpUtils {
             connection.setHostnameVerifier(new TrustAnyHostnameVerifier());
         }
         return connection;
-    }
-
-    /**
-     * 设置请求，返回conn
-     * @param url
-     * @return
-     */
-    public static HttpURLConnection getResponseConnection(String url){
-        HttpURLConnection conn = null;
-        try {
-            URL realUrl = new URL(url);
-            conn = (HttpURLConnection) realUrl.openConnection();
-            conn.setRequestMethod("GET");
-            conn.setUseCaches(false);
-            conn.setReadTimeout(8000);
-            conn.setConnectTimeout(8000);
-            conn.setInstanceFollowRedirects(false);
-            conn.setRequestProperty("Connection","keep-alive");
-            conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36");
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return conn;
     }
 
 

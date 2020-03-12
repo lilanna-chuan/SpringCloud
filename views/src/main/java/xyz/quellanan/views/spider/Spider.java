@@ -13,6 +13,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import xyz.quellanan.views.util.HttpclientUtils;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -41,7 +42,7 @@ public class Spider {
      * @param pages 页数
      * @return
      */
-    public List<IpBean> crawl(String url,int pages){
+    public List<IpBean> crawl(String url,int pages) throws Exception {
         this.pages = pages;
         return crawl(url);
     }
@@ -51,7 +52,7 @@ public class Spider {
      * @param url
      * @return
      */
-    public List<IpBean> crawl(String url){
+    public List<IpBean> crawl(String url) throws Exception {
         String[] urlArr=url.split(ConstantPool.SEPARATORCOMMA);
         for(int i=0;i<urlArr.length;i++){
             String temp=urlArr[i];
@@ -78,8 +79,9 @@ public class Spider {
      * 不带页数的爬取
      * @param url
      */
-    private void crawlNoPage(String url){
-        getResponseFromJson(HttpUtils.getResponseConnection(url));
+    private void crawlNoPage(String url) throws Exception {
+        IpBean ipBean=null;
+        getResponseFromJson(HttpUtils.getHttpURLConnection(url,ipBean));
     }
 
     /**
@@ -116,7 +118,7 @@ public class Spider {
     private void getResponseFromXiCi(String url, int index) {
         String html = null;
         try {
-            html = HttpUtils.getResponseContent(url + index,null);
+            html =HttpUtils.getResponseContent(url + index,null);
         } catch (Exception e) {
             log.error("{}",e);
         }
