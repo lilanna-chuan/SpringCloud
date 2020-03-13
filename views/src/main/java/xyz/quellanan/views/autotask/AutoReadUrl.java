@@ -25,7 +25,7 @@ import java.io.*;
 @Slf4j
 public class AutoReadUrl {
 
-    @Scheduled(cron = "0 */5 6-23 * * ?")
+    @Scheduled(cron = "0 */30 6-23 * * ?")
     private void configureTasks() {
         FileUtils.getUrlFile();
     }

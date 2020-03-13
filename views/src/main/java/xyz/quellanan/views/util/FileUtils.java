@@ -57,6 +57,14 @@ public class FileUtils {
         return true;
     }
 
+    public static void delUrlFile(){
+        File file = new File(ConstantPool.BASEPATH+ConstantPool.FILENAME);
+        if(!file.exists()){
+            return;
+        }
+        file.delete();
+    }
+
     public static void  getUrlFile(){
         log.info("路径："+ConstantPool.BASEPATH);
         File file = new File(ConstantPool.BASEPATH+ConstantPool.FILENAME);

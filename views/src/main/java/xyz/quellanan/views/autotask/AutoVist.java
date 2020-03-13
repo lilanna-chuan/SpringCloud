@@ -26,7 +26,7 @@ import java.util.List;
 @Slf4j
 public class AutoVist {
 
-    @Scheduled(cron = "0 */3 6-23 * * ?")
+    @Scheduled(cron = "0 */5 6-23 * * ?")
     public void getIp() {
         if(UrlPool.urlPool.isEmpty()){
             return;
