@@ -10,6 +10,7 @@ import java.util.Scanner;
  * @Version 1.0
  */
 public class Main_01 {
+
     public static void main(String[] args) {
         Scanner in=new Scanner(System.in);
         while (in.hasNext()){

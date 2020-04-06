@@ -6,22 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="algorithm" />
-        <module name="config" />
-        <module name="eureka-client-consumer" />
-        <module name="eureka-client-provider" />
-        <module name="eureka-server-8000" />
-        <module name="eureka-server-8001" />
-        <module name="eureka-server-8002" />
         <module name="hystrix-consumer" />
-        <module name="kafka-consumer" />
         <module name="kafka-producer" />
-        <module name="ribbon-consumer" />
-        <module name="ribbon-provider-9004" />
-        <module name="ribbon-provider-9005" />
-        <module name="views" />
         <module name="zlflovemm" />
+        <module name="ribbon-provider-9005" />
+        <module name="ribbon-provider-9004" />
+        <module name="ribbon-consumer" />
+        <module name="eureka-client-provider" />
         <module name="zuul" />
+        <module name="kafka-consumer" />
+        <module name="views" />
+        <module name="eureka-client-consumer" />
+        <module name="eureka-server-8002" />
+        <module name="config" />
+        <module name="algorithm" />
+        <module name="eureka-server-8001" />
+        <module name="eureka-server-8000" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -43,5 +43,25 @@
       <module name="zlflovemm" target="1.8" />
       <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="algorithm" options="-parameters" />
+      <module name="config" options="-parameters" />
+      <module name="eureka-client-consumer" options="-parameters" />
+      <module name="eureka-client-provider" options="-parameters" />
+      <module name="eureka-server-8000" options="-parameters" />
+      <module name="eureka-server-8001" options="-parameters" />
+      <module name="eureka-server-8002" options="-parameters" />
+      <module name="hystrix-consumer" options="-parameters" />
+      <module name="kafka-consumer" options="-parameters" />
+      <module name="kafka-producer" options="-parameters" />
+      <module name="ribbon-consumer" options="-parameters" />
+      <module name="ribbon-provider-9004" options="-parameters" />
+      <module name="ribbon-provider-9005" options="-parameters" />
+      <module name="views" options="-parameters" />
+      <module name="zlflovemm" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+    </option>
   </component>
 </project>
