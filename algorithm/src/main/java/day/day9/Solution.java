@@ -51,7 +51,7 @@ public class Solution {
         //int[] num2={3,4};
         //System.out.println(solution.findMedianSortedArrays(num1,num2));
 
-        String s="civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth";
+        String s="abcba";
         System.out.println(solution.longestPalindrome(s));
 
     }
@@ -67,7 +67,7 @@ public class Solution {
         String result="";
         for(int i=0;i<s.length();i++){
             for(int j=arr.length-1;j>=i;j--){
-                if(arr[i].equals(arr[j]) && check(i,j,arr)){
+                if(arr[i].equals(arr[j]) && check(i,j,arr,s)){
                     String temp=s.substring(i,j+1);
                     if(temp.length()>result.length()){
                         result=temp;
@@ -78,12 +78,9 @@ public class Solution {
         return result;
     }
 
-    public boolean check(int i,int j,String [] arr){
-        String shun="";
+    public boolean check(int i,int j,String [] arr,String s){
+        String shun=s.substring(i,j+1);
         String fan="";
-        for(int k=i;k<=j;k++){
-            shun+=arr[k];
-        }
         for(int k=j;k>=i;k--){
             fan+=arr[k];
         }
@@ -103,9 +100,25 @@ public class Solution {
         for( int i=0;i<n-1;i++){
             dp[i][i+1]=arr[i]==arr[i+1];
         }
+        int start=0;
+        int end=0;
+        int max=0;
+        for(int i=n-2;i>=0;i--){
+            for(int j=i+1;j<n;j++){
+                if(j!=i+1){
+                    dp[i][j]=dp[i+1][j-1] && arr[i]==arr[j];
+                }
 
+                if(dp[i][j] && max<j-i+1){
+                    max=j-i+1;
+                    start=i;
+                    end=j;
+                }
+            }
 
-        return "";
+        }
+
+        return s.substring(start,end+1);
     }
 
 
