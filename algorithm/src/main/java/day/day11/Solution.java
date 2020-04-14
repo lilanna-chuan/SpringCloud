@@ -171,7 +171,12 @@ public class Solution {
     }
 
 
-
+    /**
+     * 三数之和
+     * @param nums
+     * @param target
+     * @return
+     */
     public int threeSumClosest(int[] nums, int target) {
         int result=0;
         int min=Integer.MAX_VALUE;
