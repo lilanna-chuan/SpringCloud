@@ -41,6 +41,12 @@ public class Solution {
     }
 
 
+    /**
+     * 双指针，先找出为奇数的下标。然后求和
+     * @param nums
+     * @param k
+     * @return
+     */
     public int numberOfSubarrays2(int[] nums, int k) {
         if(nums.length<1 || k<1 || nums.length < k){
             return 0;
