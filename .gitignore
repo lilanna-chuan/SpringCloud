@@ -1,0 +1,32 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+.gitignore
+.idea/sonarlint/
+algorithm/target/
+config/target/
+demo/.idea/sonarlint/
+demo/target/generated-sources/
+eureka-client-consumer/target/
+eureka-client-provider/target/
+eureka-server-8000/.idea/sonarlint/
+eureka-server-8000/target/
+eureka-server-8001/.idea/sonarlint/
+eureka-server-8001/target/
+eureka-server-8002/.idea/sonarlint/
+eureka-server-8002/target/
+hystrix-consumer/target/
+kafka-consumer/src/main/resources/static/
+kafka-consumer/src/main/resources/templates/
+ribbon-provider-9005/target/
+views/src/test/
+views/target/
+zlflovemm/.idea/sonarlint/
+zlflovemm/target/
+zuul/target/
