@@ -6,22 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hystrix-consumer" />
-        <module name="kafka-producer" />
-        <module name="zlflovemm" />
-        <module name="ribbon-provider-9005" />
-        <module name="ribbon-provider-9004" />
-        <module name="ribbon-consumer" />
-        <module name="eureka-client-provider" />
-        <module name="zuul" />
-        <module name="kafka-consumer" />
-        <module name="views" />
-        <module name="eureka-client-consumer" />
-        <module name="eureka-server-8002" />
-        <module name="config" />
         <module name="algorithm" />
-        <module name="eureka-server-8001" />
+        <module name="config" />
+        <module name="eureka-client-consumer" />
+        <module name="eureka-client-provider" />
         <module name="eureka-server-8000" />
+        <module name="eureka-server-8001" />
+        <module name="eureka-server-8002" />
+        <module name="hystrix-consumer" />
+        <module name="java-study" />
+        <module name="kafka-consumer" />
+        <module name="kafka-producer" />
+        <module name="ribbon-consumer" />
+        <module name="ribbon-provider-9004" />
+        <module name="ribbon-provider-9005" />
+        <module name="views" />
+        <module name="zlflovemm" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,6 +34,7 @@
       <module name="eureka-server-8001" target="1.8" />
       <module name="eureka-server-8002" target="1.8" />
       <module name="hystrix-consumer" target="1.8" />
+      <module name="java-study" target="1.8" />
       <module name="kafka-consumer" target="1.8" />
       <module name="kafka-producer" target="1.8" />
       <module name="ribbon-consumer" target="1.8" />

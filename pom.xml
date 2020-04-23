@@ -93,6 +93,7 @@
         <module>kafka-producer</module>
         <module>kafka-consumer</module>
         <module>views</module>
+        <module>java-study</module>
     </modules>
 
 </project>
