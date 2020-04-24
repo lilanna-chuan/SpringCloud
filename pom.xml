@@ -94,6 +94,7 @@
         <module>kafka-consumer</module>
         <module>views</module>
         <module>java-study</module>
+        <module>logo-start</module>
     </modules>
 
 </project>

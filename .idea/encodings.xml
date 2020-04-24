@@ -23,6 +23,8 @@
     <file url="file://$PROJECT_DIR$/kafka-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-producer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/logo-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mytest" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ribbon-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ribbon-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ribbon-provider-9004" charset="UTF-8" />

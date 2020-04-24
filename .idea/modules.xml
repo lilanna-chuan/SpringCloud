@@ -14,6 +14,8 @@
       <module fileurl="file://$PROJECT_DIR$/java-study/java-study.iml" filepath="$PROJECT_DIR$/java-study/java-study.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka-consumer/kafka-consumer.iml" filepath="$PROJECT_DIR$/kafka-consumer/kafka-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka-producer/kafka-producer.iml" filepath="$PROJECT_DIR$/kafka-producer/kafka-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logo-starter/logo-starter.iml" filepath="$PROJECT_DIR$/logo-starter/logo-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mytest/mytest.iml" filepath="$PROJECT_DIR$/mytest/mytest.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon-consumer/ribbon-consumer.iml" filepath="$PROJECT_DIR$/ribbon-consumer/ribbon-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon-provider-9004/ribbon-provider-9004.iml" filepath="$PROJECT_DIR$/ribbon-provider-9004/ribbon-provider-9004.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon-provider-9005/ribbon-provider-9005.iml" filepath="$PROJECT_DIR$/ribbon-provider-9005/ribbon-provider-9005.iml" />

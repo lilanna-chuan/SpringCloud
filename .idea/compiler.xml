@@ -17,6 +17,8 @@
         <module name="java-study" />
         <module name="kafka-consumer" />
         <module name="kafka-producer" />
+        <module name="logo-starter" />
+        <module name="mytest" />
         <module name="ribbon-consumer" />
         <module name="ribbon-provider-9004" />
         <module name="ribbon-provider-9005" />
@@ -37,6 +39,8 @@
       <module name="java-study" target="1.8" />
       <module name="kafka-consumer" target="1.8" />
       <module name="kafka-producer" target="1.8" />
+      <module name="logo-starter" target="1.5" />
+      <module name="mytest" target="1.8" />
       <module name="ribbon-consumer" target="1.8" />
       <module name="ribbon-provider-9004" target="1.8" />
       <module name="ribbon-provider-9005" target="1.8" />
