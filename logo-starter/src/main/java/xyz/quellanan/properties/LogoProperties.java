@@ -23,7 +23,6 @@ public class LogoProperties {
     public static final String URL="xyz.quellanan";
     public static final String CONTENT="welcome !";
 
-    @Value()
     private String name;
     private String url;
     private String content;

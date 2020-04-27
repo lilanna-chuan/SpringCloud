@@ -39,9 +39,6 @@ public class LogoConfig {
         logo.setContent(logoProperties.getContent()==null?LogoProperties.CONTENT:logoProperties.getContent());
         logo.setTime(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Calendar.getInstance().getTime()));
         System.out.println(logo.getName());
-        System.out.println(logo.getUrl());
-        System.out.println(logo.getContent());
-        System.out.println(logo.getTime());
         return logo;
     }
 }
