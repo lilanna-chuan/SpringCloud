@@ -11,5 +11,13 @@
 
     <artifactId>java-study</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.vdurmont</groupId>
+            <artifactId>emoji-java</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
