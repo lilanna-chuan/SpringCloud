@@ -25,13 +25,13 @@ public class FeginController {
 
     @RequestMapping("/fegin")
     public String getHello(){
-        return  helloService.hello();
+        return  helloService.hello()+"hystrix-consumer";
     }
 
     @RequestMapping("/fegin2")
     public String getHello2(){
         String name="quellanan";
-        return  helloService.hello2(name);
+        return  helloService.hello2(name)+"hystrix-consumer";
     }
 
 
@@ -39,7 +39,7 @@ public class FeginController {
     public String getHello3(){
         String name="quellanan";
         String age="18";
-        return  helloService.hello3(name,age);
+        return  helloService.hello3(name,age)+"hystrix-consumer";
     }
 
     @RequestMapping("/fegin4")
@@ -47,6 +47,6 @@ public class FeginController {
         Map<String, Object> parms=new HashMap<>();
         parms.put("name","quellanan");
         parms.put("age","18");
-        return  helloService.hello4(parms);
+        return  helloService.hello4(parms)+"hystrix-consumer";
     }
 }

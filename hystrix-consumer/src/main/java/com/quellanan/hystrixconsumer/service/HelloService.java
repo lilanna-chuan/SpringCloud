@@ -16,7 +16,7 @@ import java.util.Map;
  * @Version 1.0
  */
 
-@FeignClient(name = "ribbon-provider",fallback = HelloServiceFallback.class)
+@FeignClient(name = "ribbon-provider-doc",fallback = HelloServiceFallback.class)
 public interface HelloService {
 
     @RequestMapping("/hello")

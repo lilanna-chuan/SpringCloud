@@ -37,10 +37,11 @@ public class AccessFilter extends ZuulFilter {
         HttpServletRequest request=ctx.getRequest();
         String token=request.getParameter("token");
 
-        if(token == null || !token.equals("123456")){
+        if(token == null || !token.equals("7715895625")){
            log.info("token is error!");
            ctx.setSendZuulResponse(false);
            ctx.setResponseStatusCode(500);
+           ctx.setResponseBody("权限验证失败!");
            return "error";
         }
         log.info("token is ok");
